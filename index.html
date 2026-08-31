@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <section>
+        <h1>Job Portal</h1>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter Your Email" required/>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter Your Password" required />
+
+     <label for="userType">User Type:</label>
+     <select id="userType" required>
+
+      <option value="">Select User Type</option>
+      <option value="employer">Employer</option>
+      <option value="jobSeeker">Job Seeker</option>
+    </select>
+    <button>Login</button>
+     </section>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
