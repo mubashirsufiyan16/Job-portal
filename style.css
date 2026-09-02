@@ -56,7 +56,7 @@ button {
     font-weight: bold;
 }
 
-#employerDashboard {
+/* #employerDashboard {
     width: 800px;
 }
 
@@ -66,41 +66,74 @@ button {
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
-}
+} */
 
 #createJobBtn {
     margin-bottom: 10px;
 }
-
-
-#jobContainer {
+.logout-btn{
+    width: fit-content;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    float: left;
+    margin: 5px;
+    background-color: #2e9962;
+    color: white;
+}
+
+#jobsContainer {
+   color: white;
+   /* border: 1px solid white; */
+   width: 100%;
+   height: 100%;
+   margin: 10px;
+   border-radius: 10px;
 }
 
 
 .job-card {
-    background-color: #153526;
-    border: 1px solid #315b44;
+    background: linear-gradient(145deg, #153526, #10291f);
+    border: 1px solid #2d6b4d;
     padding: 20px;
-    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin: 30px;
+    margin-bottom: 10px;
+    width: fit-content;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    transition: 0.3s ease;
 }
 
+/* .job-card:hover {
+    transform: translateY(-4px);
+    border-color: #4caf78;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+} */
+
 .job-card h3 {
-    color: #0f0f0f;
-    font-family: serif;
-    font-size: 22px;
-    margin-bottom: 12px;
+    color: #7ee2ab;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 21px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .job-card p {
-    color: #8fffdc8e;
-    margin: 7px 0;
-    font-weight: 900;
+    color: #c5ded2;
+    margin: 9px 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+/* #jobSeekerDashboard{
+    width: 800px;
 }
 
+#jobSeekerContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+} */
 
 @media (max-width: 480px) {
 
@@ -114,11 +147,13 @@ button {
         margin: 15px auto;
     }
 
-    #employerDashboard {
+    #employerDashboard,
+    #jobSeekerDashboard {
         width: 100%;
     }
 
-    #jobContainer {
+    #jobContainer,
+    #jobSeekerContainer {
         grid-template-columns: 1fr;
     }
 
@@ -142,11 +177,13 @@ button {
         width: 90%;
     }
 
-    #employerDashboard {
+    #employerDashboard,
+    #jobSeekerDashboard {
         width: 90%;
     }
 
-    #jobContainer {
+    #jobContainer,
+    #jobSeekerContainer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -158,11 +195,13 @@ button {
         width: 500px;
     }
 
-    #employerDashboard {
+    #employerDashboard,
+    #jobSeekerDashboard {
         width: 700px;
     }
 
-    #jobContainer {
+    #jobContainer,
+    #jobSeekerContainer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -174,11 +213,13 @@ button {
         width: 500px;
     }
 
-    #employerDashboard {
+    #employerDashboard,
+    #jobSeekerDashboard {
         width: 800px;
     }
 
-    #jobContainer {
+    #jobContainer,
+    #jobSeekerContainer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
