@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<section id="loginSection" style="display: block;">
+
+    <h1>Job Portal</h1>
+
+    <form id="loginForm">
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+          
+        >
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Your Password"
+          
+        >
+
+        <label for="userType">User Type:</label>
+
+        <select  id="userType" required " >
+            <option value="" disabled selected hidden >select user type</option>
+            <option value="employer">Employer</option>
+            <option value="jobSeeker">Job Seeker</option>
+        </select>
+
+        <button id="submit" type="button">Login</button>
+
+    </form>
+
+</section>
+    <section id="employerDashboard" style="display: none;">
+        <button class="logout-btn">log out</button>
+      <h1>Employer Dashoboard</h1>
+      <button id="createJobBtn">Create Job</button>
+      <h2>My Jobs</h2>
+      <div id="jobContainer"></div>
+    </section>
+
+
+     <section id="jobSeekerDashboard" style="display: none">
+        <h1>Job Seeker Dashoboard</h1> 
+        <div id="jobSeekerContainer"><div id="jobsContainer">
+</div> </div>
+    </section>
+    
+      <section id="createJobSection" style="display: none;">
+        <h1>Create Job</h1> 
+    </section> 
+
+    <form id="jobForm" style="display: none;">
+<input id="jobTitle" placeholder="Job Title" required />
+<input id="jobDescription" placeholder="Job Description" />
+<input id="jobPrice" type="number" placeholder="Job Price" />
+<input id="country" placeholder="Country" />
+<input id="city" placeholder="City" />
+ 
+  <button id="createJob" type="submit">Create a Job</button>
+        
+ 
+
+</form>
+
+
+</section>
+    <script src="script.js"></script>
+  </body>
+</html>
